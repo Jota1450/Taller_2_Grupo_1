@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Idioma"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Medida"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerServicio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/spinnerServicio"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerServicio" />
+
+    <TextView
+        android:id="@+id/textViewIdioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginRight="288dp"
+        android:text="Servicio"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerServicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Direccion"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvMedida"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lb_second_Medida"
+        app:layout_constraintTop_toBottomOf="@+id/lb_second_Medida" />
+
+    <EditText
+        android:id="@+id/lb_second_Medida"
+        android:layout_width="259dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="7dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDirector"
+        app:layout_constraintEnd_toEndOf="@+id/textViewNombre"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewNombre"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombre" />
+
+    <EditText
+        android:id="@+id/lb_second_Servicio"
+        android:layout_width="259dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnCancelar"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDirector"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewDirector"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDirector" />
+
+    <Spinner
+        android:id="@+id/spinnerServicio"
+        android:layout_width="163dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewNombre"
+        app:layout_constraintEnd_toEndOf="@+id/textViewIdioma"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewIdioma"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIdioma" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Cancelar"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/lb_second_Servicio"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/lb_second_Servicio"
+        app:layout_constraintTop_toBottomOf="@+id/lb_second_Servicio" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:text="Guardar"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnCancelar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelar"
+        app:layout_constraintTop_toTopOf="@+id/btnCancelar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvMedida"
+        android:layout_width="75dp"
+        android:layout_height="46dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/lb_second_Medida"
+        app:layout_constraintStart_toEndOf="@+id/lb_second_Medida"
+        app:layout_constraintTop_toTopOf="@+id/lb_second_Medida" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
